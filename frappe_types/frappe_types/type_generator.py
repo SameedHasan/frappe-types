@@ -41,7 +41,7 @@ def create_type_definition_file(doc, method=None):
         for type_setting in type_generation_settings:
             if app_name == type_setting.app_name:
                 # Types folder is created in the app
-                type_path: Path = app_path / type_setting.app_path / "types"
+                type_path: Path = app_path / type_setting.app_path / "jsons"
 
                 if not type_path.exists():
                     type_path.mkdir()
